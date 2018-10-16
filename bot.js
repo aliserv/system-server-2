@@ -6,7 +6,7 @@ const prefix = '';
 
 client.on('ready', () => {
 
-    console.log(`Logged in as [ Tokyo]`);
+    console.log(`Logged in as [ Vida]`);
 
 });
 
@@ -29,7 +29,7 @@ client.on('voiceStateUpdate', (o,n) => {
 
         n.guild.channels.get("501125690675036193").edit({
 
-            name : "Angels Online : [" + ss+ "]"
+            name : "Vida Online : [" + ss+ "]"
 
         })
 
@@ -41,7 +41,7 @@ client.on('voiceStateUpdate', (o,n) => {
 
         n.guild.channels.get("501125690675036193").edit({
 
-            name : "Angels Online : [" + ss+ "]"
+            name : "Vida Online : [" + ss+ "]"
 
         })
 
@@ -61,7 +61,7 @@ client.on("ready", () => {
 
         client.channels.get("501125690675036193").edit({
 
-            name : "Angels Online : [" + ss+ "]"
+            name : "Vida Online : [" + ss+ "]"
 
         })
 
@@ -69,7 +69,7 @@ client.on("ready", () => {
 
 });
 
-// جميع الحقوق محفوظة لدى :@┃HEART┃ ❦  4EVER#9512 
+// جميع الحقوق محفوظة لدى :@FOIL#4996
 
 
 
@@ -835,7 +835,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "Angels")
+        guild = client.guilds.find("name", "Vida")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -844,7 +844,7 @@ client.on("ready", () => {
     })
 })
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.find('name', 'angels');
+    let channel = member.guild.channels.find('name', 'Vida');
     if (!channel) {
         console.log("!channel fails");
         return;
@@ -855,7 +855,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "Angels")
+        guild = client.guilds.find("name", "Vida")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
