@@ -19,58 +19,8 @@ client.on('ready', () => {
 
 
 
-var ss = 0;
 
-client.on('voiceStateUpdate', (o,n) => {
-
-    if (o.voiceChannel && !n.voiceChannel) {
-
-        ss-=1
-
-        n.guild.channels.get("").edit({
-
-            name : "Voice Online : [ " + ss+ " ]"
-
-        })
-
-    };
-
-    if (n.voiceChannel && !o.voiceChannel) {
-
-        ss+=1
-
-        n.guild.channels.get("").edit({
-
-            name : "Voice Online : [ " + ss+ " ]"
-
-        })
-
-    }
-
-})
-
-client.on("ready", () => {
-
-    client.guilds.get("").members.forEach(m => {
-
-        if (m.voiceChannel) {
-
-            ss+=1
-
-        };
-
-        client.channels.get("").edit({
-
-            name : "Voice Online : [ " + ss+ " ]"
-
-        })
-
-    });
-
-});
-
-// جميع الحقوق محفوظة لدى @FOIL#4996 
-
+        
 
 
 
